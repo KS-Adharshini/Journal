@@ -1,0 +1,38 @@
+/* You can add your CSS styles here, or use Tailwind CSS if you're using it */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0;
+}
+
+input, textarea {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
