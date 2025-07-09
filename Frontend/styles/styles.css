@@ -1,0 +1,331 @@
+/* Reset & Base Styles */
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Home Container */
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+.top-right {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  border-radius: 30px; /* Added rounded corners */
+}
+
+/* Sign In and Sign Up Buttons */
+.top-right button {
+  background: linear-gradient(45deg, #3498db, #9b59b6); /* Soft blue/purple gradient */
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.top-right button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Start Button */
+.start-btn {
+  padding: 15px 30px;
+  background: linear-gradient(45deg, #ff6ec7, #8e44ad);
+  border-radius: 30px;
+  font-size: 18px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.start-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.text p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #111; /* Dark background */
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.auth-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Box to differentiate form visually */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+  background: #1a1a1a; /* Slightly lighter than background */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.05); /* Soft white-ish shadow */
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  background: #222;
+  color: white;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form input::placeholder {
+  color: #bbb;
+}
+
+/* Button container for horizontal alignment */
+.button-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; /* Optional: wrap on smaller screens */
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.button-group button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #ff6ec7, #8e44ad);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.button-group button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.forgot {
+  color: #ff6ec7;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.forgot:hover {
+  color: #8e44ad;
+}
+/* Auth Container: full-page centered layout */
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Heading */
+.auth-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Auth Form Box */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+  background: #1b1b1b; /* Slight contrast from page background */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05); /* Soft white shadow */
+}
+
+/* Input Fields */
+.auth-form input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  background: #222;
+  color: white;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form input::placeholder {
+  color: #bbb;
+}
+
+/* Forgot Password Link */
+.forgot {
+  color: #ff6ec7;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.forgot:hover {
+  color: #8e44ad;
+}
+
+/* Button Group: side-by-side layout */
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  justify-content: center;
+  flex-wrap: wrap; /* Wrap on smaller screens */
+}
+
+/* Button Styling */
+.button-group button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #ff6ec7, #8e44ad);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.button-group button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #111;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #bbb;
+}
+
+.dropdown {
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.gradient-button {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 9999px;
+  background-image: linear-gradient(to right, #ff6ec4, #7873f5);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.gradient-button:hover {
+  transform: scale(1.05);
+}
+.quote-text {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin: 1.5rem 0 2.5rem;
+  color: #ddd;
+  max-width: 600px;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
